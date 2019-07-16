@@ -4,6 +4,7 @@ namespace VehicleFactory
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine("Lets Make Vehicles");
@@ -17,6 +18,20 @@ namespace VehicleFactory
             Electricity electricity = new Electricity();
             Diesel diesel = new Diesel();
 
+            var teslaFactory = new TeslaFactory();
+            var luminaFactory = new LuminaFactory();
+            var f150Factory = new F150Factory();
+            var mackFactory = new MackFactory();
+
+            // if you're building a factory this makes sense, you let the door factory make the doors.
+            teslaFactory.BuildTesla(tesla);
+            luminaFactory.BuildLumina(lumina);
+            f150Factory.BuildF150(f150);
+            mackFactory.BuildMack(mack);
+
+
+            // first method, but is it this main method's responsibility to make this?
+            //tesla.FrontDoors = new FrontDoors();
 
             tesla.FrontDoors.FrontDoorsOpen();
             tesla.FrontDoors.FrontDoorsClose();
@@ -50,5 +65,17 @@ namespace VehicleFactory
 
 
         }
+        
+
+        //public class doorfactory
+        //{
+        //    public void attachdoors(vehicle vehicle) {
+        //        if(vehicle.cost > 1000000) {
+        //            // attach doors that go like this: \_/
+        //        } else {
+        //            vehicle.frontdoors = new frontdoors();
+        //        }
+        //    }
+        //}
     }
 }
