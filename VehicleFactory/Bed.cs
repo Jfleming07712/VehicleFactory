@@ -8,8 +8,11 @@ namespace VehicleFactory
     {
         public void Fill()
         {
-            bool bedFull = true;
             Console.WriteLine("The bed is now full");
+        }
+        public void Empty()
+        {
+            Console.WriteLine("The bed is now empty");
         }
     }
 }

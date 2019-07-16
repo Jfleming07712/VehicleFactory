@@ -6,5 +6,6 @@ namespace VehicleFactory
 {
     public abstract class Car : Vehicle
     {
+
     }
 }

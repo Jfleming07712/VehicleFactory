@@ -6,5 +6,6 @@ namespace VehicleFactory
 {
     public class PickUp : Truck
     {
+        public Bed Bed { get; set; }
     }
 }

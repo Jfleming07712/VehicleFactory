@@ -6,5 +6,6 @@ namespace VehicleFactory
 {
     public class Semi : Truck
     {
+        
     }
 }

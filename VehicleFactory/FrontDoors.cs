@@ -4,7 +4,16 @@ using System.Text;
 
 namespace VehicleFactory
 {
-    class FrontDoors : Part
+    public class FrontDoors : Part
     {
+        public void FrontDoorsOpen()
+        {
+            Console.WriteLine("Front doors are now open");
+        }
+        public void FrontDoorsClose()
+        {
+            Console.WriteLine("Front doors are now closed");
+        }
+        
     }
 }

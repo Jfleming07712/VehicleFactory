@@ -4,7 +4,19 @@ using System.Text;
 
 namespace VehicleFactory
 {
-    class Engine : Part
+    public class Engine : Part
     {
+        public void Go(Gas gas)
+        {
+            Console.WriteLine("vroom");
+        }
+        public void Go(Diesel diesel)
+        {
+            Console.WriteLine("BLUB BLUB BLUB");
+        }
+        public void Go(Electricity electricity)
+        {
+            Console.WriteLine("Is this thing on?");
+        }
     }
 }

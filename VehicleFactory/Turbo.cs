@@ -6,5 +6,9 @@ namespace VehicleFactory
 {
     public class Turbo : Part
     {
+        public void GoFast()
+        {
+            Console.WriteLine("VROOM VROOM VROOM");
+        }
     }
 }

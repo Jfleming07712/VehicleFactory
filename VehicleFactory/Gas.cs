@@ -4,9 +4,7 @@ using System.Text;
 
 namespace VehicleFactory
 {
-    public class SportsCar : Car
+    public class Gas : Fuel
     {
-        public Turbo Turbo { get; set; }
-
     }
 }

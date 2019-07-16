@@ -6,16 +6,13 @@ namespace VehicleFactory
 {
     public class BackDoors : Part
     {
-        public bool backDoorsOpen = false;
-        public void Open()
+        public void BackDoorsOpen()
         {
             Console.WriteLine("Back doors are now open");
-            var backDoorsOpen = true;
         }
 
-        public void Close()
+        public void BackDoorsClose()
         {
-            bool backDoorsOpen = false;
             Console.WriteLine("Back doors are now closed");
         }
     }

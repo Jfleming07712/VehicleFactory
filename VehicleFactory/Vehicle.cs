@@ -8,15 +8,9 @@ namespace VehicleFactory
     {
         public string Name { get; set; }
         public int Vin { get; set; }
-
-        public void Go()
-        {
-            Console.WriteLine("vroom");
-        }
-        public void Stop()
-        {
-            Console.WriteLine("screetch");
-        }
+        public Engine Engine { get; set; }
+        public FrontDoors FrontDoors { get; set; }
 
     }
 }
+

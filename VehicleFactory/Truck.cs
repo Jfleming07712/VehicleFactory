@@ -6,5 +6,7 @@ namespace VehicleFactory
 {
     public abstract class Truck : Vehicle
     {
+        public Trailer Trailer { get; set; }
+
     }
 }
